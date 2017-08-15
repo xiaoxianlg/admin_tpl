@@ -81,4 +81,23 @@ return render_to_response("history_data.html",{
 > 3. 小巧，灵活。
 
 
+##### （3）element + vue + axios的详细介绍。
+1. 可以参考的模板一：[hotpot-admin](http://hotpot.kevin70.com/c/forms/basic-form)、[GitHub 地址](https://github.com/kevin70/hotpot-admin)
+2. 可以参考的模板二：[SlsAdmin](https://doc.vue.slsadmin.org/)
+3. 我是用的模板：[vue-element-admin的github地址](https://github.com/PanJiaChen/vue-element-admin)、[示例地址](http://panjiachen.github.io/vue-element-admin/#/dashboard)
+
+> 该模板的特点
+> 1. 丰富的编辑框，有富文本编辑器、MarkDown编辑器、Json编辑器；
+> 2. 分页展示，非常友好；
+> 3. 根据接口获取的权限结果，动态载入菜单；
+
+> 开发步骤 
+> 1. 下载所有的模板文件，本地启动。
+> 2. 如下图所示，是下载下来的模板文件的目录结构。可以先做减法，将views中你不需要的vue文件全部删除。将components中你没有引入的组件也删除了。删除的时候要注意删除一个文件夹并本地测试下，避免删除主vue（引导栏的vue）。
+> 3. 删除不必要的组件后，就可以开始开发了，开发时，可以根据你的需要再去引入相关的组件。如果是这个模板里的组件，就引用模板里的组件。多数情况下，我们只需要引入[element官网](http://element.eleme.io/#/zh-CN/component/installation)的组件。
+> ![Alt text](./admin.png)
+
+> 开发中遇到的问题。参考[element、vue2.0+、vuex、axios开发中遇到的坑点](http://blog.csdn.net/hustxiaoxian/article/details/76092336)
+> 1. 本地调试时的跨域问题的解决。
+> 2. axios.get、axios.post传输到后端的数据，后端接收不到。
 
