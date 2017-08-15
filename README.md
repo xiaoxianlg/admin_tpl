@@ -55,6 +55,7 @@ return render_to_response("history_data.html",{
 
 
 3. Amaze UI。
+
 [Amaze UI官网](http://amazeui.org/)
 [Amaze 后台模板](http://amazeui.org/examples/admin-table.html)
 > 1. 官网对于Amaze UI特点的归纳，如下图表格所示。
@@ -64,6 +65,7 @@ return render_to_response("history_data.html",{
 
 
 4. element + vue + axios。
+
 [element官网](http://element.eleme.io/#/zh-CN/component/installation)
 [vue2.0官网](https://www.vuefe.cn/v2/guide/)
 [vuex官网](https://vuex.vuejs.org/zh-cn/)
