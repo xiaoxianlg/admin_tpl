@@ -6,6 +6,7 @@
 
 ##### （2）以往的我们有啥选择。
 1. FlatLab + Python Django
+
 [FlatLab展示](http://thevectorlab.net/flatlab/)
 [bootstrap3模版flatlab3.3.2 完整版下载](http://download.csdn.net/download/zengyi083011/8447049)
 我们来看一段，前端后端交互的代码，上面部分是渲染生成一个table的分页，下面部分是python代码告知前端，我给前端的数据。
@@ -38,6 +39,7 @@ return render_to_response("history_data.html",{
 > python django前端渲染的引擎有自带的，也可以使用jinjia2。
 
 2. Jquery EasyUI + PHP Smarty
+
 [Jquery EasyUI官网](http://www.jeasyui.net/)
 [Jquery EasyUI数据表格例子](http://www.jeasyui.net/demo/331.html)
 [smarty模板使用及其原理](http://www.yiibai.com/smarty/smarty_install.html)
