@@ -4,7 +4,7 @@
 2. 交互多，与传统的展示一个静态网页不同，复杂的后台系统交互非常繁杂，除了查询、编辑，还有各种跳转。
 3. 权限管理，后台系统需要分别对于各种账号进行权限管理，不同账号不同菜单，如果细分权限还要对于不同接口细分。
 
-##### （2）以往的我们有啥选择。
+##### （2）我们的选择。
 1. FlatLab + Python Django
 
 [FlatLab展示](http://thevectorlab.net/flatlab/)
@@ -50,7 +50,33 @@ return render_to_response("history_data.html",{
 > 那上面这种前前后端耦合，有哪些特点呢。
 > 1. 如果只是增加一个类似的分页，非常方便，因为只需要后端增加一个模板页面，即可。
 > 2. 但是，如果是前端要新加效果，改动非常大。拿下面表格举例，我想要在姓名一列加上一个功能，如果双击某个名字，这个名字可以自动填充到查询的输入框。比如双击王珊珊，查询的输入框就自动输入王珊珊。对于高度耦合的前端改动很大，而且有可能牵一发而动全身，除非一开始你就规划好，要不然后来添加要改动的地方都比较多。
-![Alt text](./分页表格.png)
+![Alt text](./table.png)
 
 
-3. 
+
+3. Amaze UI。
+[Amaze UI官网](http://amazeui.org/)
+[Amaze 后台模板](http://amazeui.org/examples/admin-table.html)
+> 1. 官网对于Amaze UI特点的归纳，如下图表格所示。
+> 2. 我认为，它还有个特点就是模板非常丰富。有专门的模板中心，提供你选择。[模板中心](http://tpl.amazeui.org/)
+> 3. 而且它有个衍生的版本Amaze UI React。这里有一篇文章介绍React与Vue的优劣。[React 还是 Vue: 你应该选择哪一个Web前端框架？](http://www.cnblogs.com/Chen-XiaoJun/p/6246946.html)
+> ![Alt text](./Amaze_ui.png)
+
+
+4. element + vue + axios。
+[element官网](http://element.eleme.io/#/zh-CN/component/installation)
+[vue2.0官网](https://www.vuefe.cn/v2/guide/)
+[vuex官网](https://vuex.vuejs.org/zh-cn/)
+[axios攻略](https://ykloveyxk.github.io/2017/02/25/axios%E5%85%A8%E6%94%BB%E7%95%A5/)
+> 我为什么选择element？
+> 1. 由饿了么专业团队维护，每2周更新一次。
+> 2. 组件非常丰富，按需接入。
+> 3. 与vue结合，开发效率更高。
+
+> 为啥选择axios？具体可以参考[JS HTTP库/Ajax库](http://blog.ipsfan.com/2950.html)
+> 1. 支持nodejs，也就是说支持在服务端使用。传统的$.ajax只支持浏览器。
+> 2. Axios 基于 promise 语法标准。[什么是 Promise](http://wiki.jikexueyuan.com/project/javascript-promise-mini-book/what-is-the-promise.html)如何使用promise语法可以参考[JavaScript Promise迷你书（中文版）](http://liubin.org/promises-book/)
+> 3. 小巧，灵活。
+
+
+
