@@ -63,8 +63,13 @@ return render_to_response("history_data.html",{
 > 3. 而且它有个衍生的版本Amaze UI React。这里有一篇文章介绍React与Vue的优劣。[React 还是 Vue: 你应该选择哪一个Web前端框架？](http://www.cnblogs.com/Chen-XiaoJun/p/6246946.html)
 > ![Alt text](./Amaze_ui.png)
 
+4. iView
+[iView组件官网](https://www.iviewui.com/docs/guide/install)
+[基于iView后台管理简单模板](https://juejin.im/entry/5902bf69b123db3ee46b510d)
+> iView与后面的element有很多相似之处。他们之间也闹出过不愉快。从技术本质上讲，基本没啥区别。
+> 有的人喜欢iView的风格，有的人喜欢element的风格。相对来讲，element出来更早，团队维护，更加成熟。
 
-4. element + vue + axios。
+5. element + vue + axios。
 
 [element官网](http://element.eleme.io/#/zh-CN/component/installation)
 [vue2.0官网](https://www.vuefe.cn/v2/guide/)
