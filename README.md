@@ -12,7 +12,7 @@
 我们来看一段，前端后端交互的代码，上面部分是渲染生成一个table的分页，下面部分是python代码告知前端，我给前端的数据。
 从下面代码我们可以知道，前端要根据后端传过来的数据，进行一定的运算后，才能分页。前端没有做到真正的组件化。
 ```vbscript-html
-	<div>
+    <div>
         <ul class="pagination pagination-sm pull-right">
             {% if pagedata_his.paginator.page_range %} 
             <li><a href="javascript:;" onclick="history_part('{{pagedata_his.number-1}}')" id="his_before"><<</a></li> 
@@ -47,7 +47,7 @@ return render_to_response("history_data.html",{
 服务器端的代码这里就不一一列举了。本质上与django\flask 中使用jinjia2引擎渲染，没有本质区别。
 
 
-> 那上面这种前前后端耦合，有哪些特点呢。
+> 那上面这种前后端耦合，有哪些特点呢。
 > 1. 如果只是增加一个类似的分页，非常方便，因为只需要后端增加一个模板页面，即可。
 > 2. 但是，如果是前端要新加效果，改动非常大。拿下面表格举例，我想要在姓名一列加上一个功能，如果双击某个名字，这个名字可以自动填充到查询的输入框。比如双击王珊珊，查询的输入框就自动输入王珊珊。对于高度耦合的前端改动很大，而且有可能牵一发而动全身，除非一开始你就规划好，要不然后来添加要改动的地方都比较多。
 ![Alt text](./table.png)
