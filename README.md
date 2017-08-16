@@ -64,6 +64,7 @@ return render_to_response("history_data.html",{
 > ![Alt text](./Amaze_ui.png)
 
 4. iView
+
 [iView组件官网](https://www.iviewui.com/docs/guide/install)
 [基于iView后台管理简单模板](https://juejin.im/entry/5902bf69b123db3ee46b510d)
 > iView与后面的element有很多相似之处。他们之间也闹出过不愉快。从技术本质上讲，基本没啥区别。
