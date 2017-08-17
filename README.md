@@ -107,3 +107,6 @@ return render_to_response("history_data.html",{
 > 1. 本地调试时的跨域问题的解决。
 > 2. axios.get、axios.post传输到后端的数据，后端接收不到。
 
+
+### 二、更多vue搭建的好玩的东西。
+> https://github.com/opendigg/awesome-github-vue （vue github项目汇总）
